@@ -1,5 +1,5 @@
-require 'test_helper'
-
+# require 'test_helper'
+require 'spec_helper'
 class MicropostsControllerTest < ActionController::TestCase
   setup do
     @micropost = microposts(:one)
