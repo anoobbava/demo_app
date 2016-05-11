@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem "codeclimate-test-reporter", group: :test, require: nil
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 # Use sqlite3 as the database for Active Record
@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 group :development do
   gem 'byebug'
-  gem 'sqlite3'
+  gem 'mysql', '~> 2.9', '>= 2.9.1'
   gem 'web-console', '~> 2.0'
   gem 'pry'
 end
