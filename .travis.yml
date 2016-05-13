@@ -6,11 +6,10 @@ rvm:
   - 2.3.0
 env:
   - DB=mysql
-script: 
+script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
   - bundle exec rspec spec/
 addons:
-    code_climate:
-CODECLIMATE_REPO_TOKEN=491a5e9ae7477c0ec3d136114fe1c4a1a92cd6ef35913512b625044166b04efe
-
+  code_climate:
+    repo_token: 7c8ffee5126edd979ce55be84afc1a079096a5596887a1f13cffcbe31117d65a
