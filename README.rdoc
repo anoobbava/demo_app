@@ -26,5 +26,6 @@ Things you may want to cover:
 {<img src="https://codeclimate.com/github/anoobbava/demo_app/badges/gpa.svg" />}[https://codeclimate.com/github/anoobbava/demo_app]
 {<img src="https://codeclimate.com/github/anoobbava/demo_app/badges/coverage.svg" />}[https://codeclimate.com/github/anoobbava/demo_app/coverage]
 {<img src="https://codeclimate.com/github/anoobbava/demo_app/badges/issue_count.svg" />}[https://codeclimate.com/github/anoobbava/demo_app]
+{<img src="https://travis-ci.org/anoobbava/demo_app.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/anoobbava/demo_app]
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.

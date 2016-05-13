@@ -48,6 +48,12 @@ RSpec.describe MicropostsController, type: :controller do
     expect(response).to redirect_to(@post)
   end
 
+  it 'update the micropost error' do
+    update_params = FactoryGirl.attributes_for(:micro_length)
+    put :update, id: @post.id, micropost: update_params
+    expect(response.status).to render_template('edit')
+  end
+
   it 'destroy the micropost' do
     expect { delete :destroy, id: @post }.to change(Micropost, :count).by(-1)
   end

@@ -44,10 +44,16 @@ RSpec.describe UsersController, type: :controller do
     expect(response.status).to render_template('new')
   end
 
-  it 'update the micropost' do
+  it 'update the user' do
     update_params = FactoryGirl.attributes_for(:user1)
     put :update, id: @user.id, user: update_params
     expect(response).to redirect_to(@user)
+  end
+
+  it 'update the user error' do
+    update_params = FactoryGirl.attributes_for(:user_error)
+    put :update, id: @user.id, user: update_params
+    expect(response.status).to render_template('edit')
   end
 
   it 'destroy the micropost' do
