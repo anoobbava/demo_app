@@ -1,11 +1,10 @@
 language: ruby
 rvm:
-  - 1.9.3
-  - 2.1.0
   - 2.2.0
-  - 2.3.0
 env:
   - DB=mysql
+before_script:
+  - mysql -e 'create database demo_app_db_test;'
 script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
